@@ -1,0 +1,227 @@
+body {
+  margin: 0 auto;
+}
+
+header {
+  height: 145px;
+  display: flex;
+  vertical-align: middle;
+}
+
+header h1 {
+  flex: 8;
+  text-align: center;
+  margin: auto 0;
+}
+
+header nav {
+  flex: 1;
+  text-align: right;
+}
+
+.fab {
+  padding: 10px;
+}
+
+.UI {
+  min-height: 100vh;
+}
+.UI nav {
+  display: flex; /* 子要素をflexboxで揃える */
+  flex-direction: row; /* 子要素をflexboxにより縦方向に揃える */
+  justify-content: center; /* 子要素をflexboxにより中央に配置する */
+  align-items: center; /* 子要素をflexboxにより中央に配置する */
+  margin-bottom: 30px;
+}
+.UI a {
+  padding-left: 20px;
+}
+.image {
+  margin-bottom: 100px;
+}
+.image h1 {
+  outline: 1px solid black;
+  background-color: skyblue;
+  height: 489px;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.who {
+  height: 560px;
+  width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.who > section {
+  display: flex;
+  margin: 0;
+}
+
+.who h2 {
+  flex: 1;
+  font-size: 32px;
+  letter-spacing: 15px;
+  line-height: 100px;
+}
+
+.who p {
+  margin: 0;
+}
+.who-left {
+  margin: auto 0;
+}
+
+.who-left p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.who-left button {
+  text-align: center;
+}
+
+.who h3 {
+  height: 540px;
+  background-color: skyblue;
+  margin: 0;
+  flex: 3;
+}
+
+.news {
+  height: 456px;
+  outline: 1px solid black;
+  margin-bottom: 100px;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.news-style {
+  display: flex;
+  flex-wrap: wrap;
+}
+.news-content {
+  flex-direction: row;
+}
+
+.news-box {
+  height: 120px;
+  width: 330px;
+  margin: 10px;
+  display: flex;
+  outline: 1px solid black;
+}
+.news-box img {
+  outline: 1px solid black;
+}
+.newa-box p {
+  margin: 10px auto;
+  width: 200px;
+  padding: 10px;
+}
+
+.pick-up {
+  height: 427px;
+  width: 1205px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.pick-up-text {
+  display: flex;
+}
+
+.pick-up-text h3 {
+  padding-left: 80px;
+  flex: 1;
+  font-size: 32px;
+}
+
+.pick-up-content1,
+.pick-up-content2 {
+  display: flex;
+}
+
+.pick-up-box {
+  height: 120px;
+  width: 330px;
+  margin: 10px;
+  display: flex;
+  outline: 1px solid black;
+}
+
+.pick-up-box p {
+  margin: 10px auto;
+  width: 200px;
+  padding: 10px;
+}
+.pick-up-box img {
+  outline: 1px solid black;
+}
+
+.cliant {
+  padding: 0 30px;
+  height: 1100px;
+  margin-bottom: 200px;
+}
+.cliant > img {
+  height: 1100px;
+  width: auto;
+}
+
+aside {
+  display: flex;
+  margin-bottom: 100px;
+  margin-left: 100px;
+}
+
+aside h1,
+section {
+  flex: 1;
+}
+
+aside h1 {
+  font-size: 30px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+aside section {
+  font-size: 10px;
+  margin: 0 auto;
+}
+
+footer {
+  display: flex;
+  background-color: lightgray;
+  height: 100px;
+  padding-left: 20px;
+  margin: 0;
+  justify-content: space-between;
+  font-style: normal;
+}
+
+.UI i {
+  padding-right: 10px;
+  font-size: 1.5em;
+  width: 20px;
+}
+
+footer p,
+div {
+  flex: 1;
+  margin: auto 0;
+}
+
+footer nav {
+  flex: 3;
+  margin: auto 0;
+  display: flex;
+}
+
+footer a {
+  flex: 1;
+}
