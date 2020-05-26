@@ -75,11 +75,12 @@ header i {
 .image {
   margin-bottom: 100px;
 }
-.image h1 {
+.image img {
   outline: 1px solid black;
   background-color: skyblue;
   height: 489px;
   margin: 0 auto;
+  width: 100vw;
 }
 
 .who {
@@ -116,7 +117,8 @@ header i {
 .who-btn {
 }
 
-.who-btn button {
+.who-btn button,
+.pick-up button {
   text-align: center;
   margin: auto 0;
   height: 40px;
@@ -126,11 +128,12 @@ header i {
   text-align: center;
   margin: 0 auto;
   box-shadow: 5px 5px 0px 0 rgb(60, 194, 235);
+  margin-top: 30px;
 }
 
-.who h3 {
+.who img {
+  padding: 10px;
   height: 540px;
-  background-color: skyblue;
   margin: 0;
   flex: 3;
 }
@@ -195,7 +198,7 @@ header i {
 }
 
 .pick-up {
-  height: 427px;
+  height: 600px;
   width: 1205px;
   margin: 0 auto;
   margin-bottom: 100px;
@@ -221,7 +224,14 @@ header i {
   width: 330px;
   margin: 10px;
   display: flex;
-  outline: 1px solid black;
+
+  box-shadow: 2px 2px 4px gray;
+}
+
+.pick-up-box img {
+  width: 120px;
+  height: 120px;
+  box-shadow: 2px 2px 4px gray;
 }
 
 .pick-up-box p {
@@ -231,6 +241,10 @@ header i {
 }
 .pick-up-box img {
   outline: 1px solid black;
+}
+
+.cliant h2 {
+  margin-top: 50px;
 }
 
 .cliant {
@@ -247,8 +261,8 @@ header i {
 .cliant-logo img {
   width: 220px;
   height: 80px;
-  outline: 1px solid black;
   margin: 10px 0;
+  margin-top: 30px;
 }
 
 aside {
