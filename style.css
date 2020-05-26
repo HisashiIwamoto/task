@@ -1,11 +1,42 @@
 body {
   margin: 0 auto;
 }
-
+#humberger {
+  position: relative;
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+#humberger div {
+  position: absolute;
+  left: 0;
+  height: 4px;
+  width: 24px;
+  background-color: #444;
+  border-radius: 2px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+#humberger div:nth-of-type(1) {
+  top: 0;
+}
+#humberger div:nth-of-type(2) {
+  top: 10px;
+}
+#humberger div:nth-of-type(3) {
+  bottom: 0;
+}
 header {
   height: 145px;
   display: flex;
   vertical-align: middle;
+}
+
+.mene-bar {
+  flex: 2;
+  padding: 0 auto;
+  position: relative;
 }
 
 header h1 {
@@ -15,8 +46,13 @@ header h1 {
 }
 
 header nav {
-  flex: 1;
+  flex: 2;
   text-align: right;
+  margin: auto 0;
+}
+
+header i {
+  flex: 1;
 }
 
 .fab {
@@ -43,7 +79,6 @@ header nav {
   outline: 1px solid black;
   background-color: skyblue;
   height: 489px;
-  width: 1280px;
   margin: 0 auto;
 }
 
@@ -78,8 +113,19 @@ header nav {
   margin-bottom: 10px;
 }
 
-.who-left button {
+.who-btn {
+}
+
+.who-btn button {
   text-align: center;
+  margin: auto 0;
+  height: 40px;
+  width: 300px;
+  border: 1px solid deeppink;
+  background-color: white;
+  text-align: center;
+  margin: 0 auto;
+  box-shadow: 5px 5px 0px 0 rgb(60, 194, 235);
 }
 
 .who h3 {
@@ -99,28 +145,53 @@ header nav {
   flex-wrap: wrap;
 }
 
+.news-style,
+.news-title {
+  width: 400px;
+}
 .news-style {
   display: flex;
   flex-wrap: wrap;
 }
+
+.news-btn {
+  writing-mode: vertical-rl;
+  padding: 10px;
+}
 .news-content {
   flex-direction: row;
+  width: 1000px;
+}
+
+.news-menu p {
+  border-bottom: 3px solid rgb(189, 181, 181);
 }
 
 .news-box {
-  height: 120px;
-  width: 330px;
+  height: 100px;
+  width: auto;
   margin: 10px;
   display: flex;
   outline: 1px solid black;
 }
 .news-box img {
+  height: 60px;
+  width: 60px;
+  margin: auto 10px;
   outline: 1px solid black;
+  flex: 2;
 }
-.newa-box p {
+
+.news-box h4 {
   margin: 10px auto;
-  width: 200px;
   padding: 10px;
+  flex: 5;
+}
+
+.news-box p {
+  margin: 10px auto;
+  padding: 10px;
+  flex: 5;
 }
 
 .pick-up {
@@ -167,9 +238,17 @@ header nav {
   height: 1100px;
   margin-bottom: 200px;
 }
-.cliant > img {
-  height: 1100px;
-  width: auto;
+
+.cliant-logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.cliant-logo img {
+  width: 220px;
+  height: 80px;
+  outline: 1px solid black;
+  margin: 10px 0;
 }
 
 aside {
