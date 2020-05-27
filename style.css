@@ -1,42 +1,25 @@
 body {
   margin: 0 auto;
 }
-#humberger {
-  position: relative;
-  height: 24px;
-  width: 24px;
-  display: inline-block;
-  box-sizing: border-box;
+
+a {
+  text-decoration: none;
+  color: black;
 }
-#humberger div {
-  position: absolute;
-  left: 0;
-  height: 4px;
-  width: 24px;
-  background-color: #444;
-  border-radius: 2px;
-  display: inline-block;
-  box-sizing: border-box;
-}
-#humberger div:nth-of-type(1) {
-  top: 0;
-}
-#humberger div:nth-of-type(2) {
-  top: 10px;
-}
-#humberger div:nth-of-type(3) {
-  bottom: 0;
-}
+
 header {
   height: 145px;
   display: flex;
   vertical-align: middle;
 }
 
-.mene-bar {
+.header-icon {
   flex: 2;
-  padding: 0 auto;
-  position: relative;
+}
+
+.header-icon i {
+  margin: 0 auto;
+  padding-left: 20px;
 }
 
 header h1 {
@@ -85,9 +68,21 @@ header i {
 
 .who {
   height: 560px;
-  width: 1280px;
+  padding: 20px;
   margin: 0 auto;
   margin-bottom: 100px;
+}
+
+.title-border {
+  display: flex;
+  align-items: center;
+}
+.title-border:before {
+  width: 6em;
+  border-top: 1px solid;
+  content: "";
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .who > section {
@@ -96,9 +91,10 @@ header i {
 }
 
 .who h2 {
+  margin-left: 30px;
   flex: 1;
   font-size: 32px;
-  letter-spacing: 15px;
+  letter-spacing: 40px;
   line-height: 100px;
 }
 
@@ -107,6 +103,12 @@ header i {
 }
 .who-left {
   margin: auto 0;
+}
+
+.who-left span {
+  color: gray;
+  opacity: 0.7;
+  font-size: 35px;
 }
 
 .who-left p {
@@ -140,7 +142,6 @@ header i {
 
 .news {
   height: 456px;
-  outline: 1px solid black;
   margin-bottom: 100px;
   padding: 10px 30px;
   display: flex;
@@ -157,9 +158,19 @@ header i {
   flex-wrap: wrap;
 }
 
+.news-menu {
+  margin-left: 10px;
+}
+
 .news-btn {
   writing-mode: vertical-rl;
   padding: 10px;
+  border: 1px solid deeppink;
+  background-color: white;
+  text-align: center;
+  margin: 0 auto;
+  box-shadow: 5px 5px 0px 0 rgb(60, 194, 235);
+  margin-top: 30px;
 }
 .news-content {
   flex-direction: row;
@@ -176,6 +187,15 @@ header i {
   margin: 10px;
   display: flex;
   outline: 1px solid black;
+}
+
+.news-box i,
+span {
+  color: pink;
+}
+
+.fa-tag {
+  transform: scale(-1, 1);
 }
 .news-box img {
   height: 60px;
@@ -199,7 +219,6 @@ header i {
 
 .pick-up {
   height: 600px;
-  width: 1205px;
   margin: 0 auto;
   margin-bottom: 100px;
 }
@@ -210,13 +229,14 @@ header i {
 
 .pick-up-text h3 {
   padding-left: 80px;
-  flex: 1;
   font-size: 32px;
 }
 
 .pick-up-content1,
 .pick-up-content2 {
   display: flex;
+  justify-content: space-around;
+  margin: 0 30px;
 }
 
 .pick-up-box {
@@ -287,9 +307,16 @@ aside section {
   margin: 0 auto;
 }
 
+.icon i {
+  width: 30px;
+  height: 30px;
+  color: pink;
+  margin: 0 auto;
+}
+
 footer {
   display: flex;
-  background-color: lightgray;
+  background-color: gray;
   height: 100px;
   padding-left: 20px;
   margin: 0;
