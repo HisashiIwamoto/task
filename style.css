@@ -149,10 +149,13 @@ header i {
   flex-wrap: wrap;
 }
 
-.news-style,
 .news-title {
-  width: 400px;
+  font-size: 30px;
 }
+.news-title h3 {
+  margin: 10px;
+}
+
 .news-style {
   display: flex;
   flex-wrap: wrap;
@@ -160,6 +163,9 @@ header i {
 
 .news-menu {
   margin-left: 10px;
+}
+
+.news-menu p {
 }
 
 .news-btn {
@@ -173,12 +179,16 @@ header i {
   margin-top: 30px;
 }
 .news-content {
-  flex-direction: row;
-  width: 1000px;
+  width: auto;
+  background-color: rgb(229, 226, 226);
 }
 
 .news-menu p {
   border-bottom: 3px solid rgb(189, 181, 181);
+}
+
+.all p {
+  border-bottom: 3px solid orange;
 }
 
 .news-box {
@@ -186,7 +196,6 @@ header i {
   width: auto;
   margin: 10px;
   display: flex;
-  outline: 1px solid black;
 }
 
 .news-box i,
@@ -202,13 +211,13 @@ span {
   width: 60px;
   margin: auto 10px;
   outline: 1px solid black;
-  flex: 2;
+  flex: 1;
 }
 
 .news-box h4 {
   margin: 10px auto;
   padding: 10px;
-  flex: 5;
+  flex: 3;
 }
 
 .news-box p {
